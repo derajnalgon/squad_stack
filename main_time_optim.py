@@ -98,20 +98,21 @@ def main():
         if line_contents[0] == "Create_parking_lot":
             create_parking_lot(int(line_contents[1]))
 
-        elif line_contents[0] == "Park":
+        elif line_contents[0].lower() == "park":
             park_a_car(line_contents[1], int(line_contents[3]))
 
-        elif line_contents[0] == "Leave":
+        elif line_contents[0].lower() == "leave":
             leave_a_car(int(line_contents[1]))
 
-        elif line_contents[0] == "Slot_numbers_for_driver_of_age":
+        elif line_contents[0].lower() == "slot_numbers_for_driver_of_age":
             get_slot_numbers_for_age(int(line_contents[1]))
 
-        elif line_contents[0] == "Slot_number_for_car_with_number":
+        elif line_contents[0].lower() == "slot_number_for_car_with_number":
             get_slot_number_for_car_with_number(line_contents[1])
 
-        elif line_contents[0] == "Vehicle_registration_number_for_driver_of_age":
+        elif line_contents[0].lower() == "vehicle_registration_number_for_driver_of_age":
             get_vehicle_registration_number_for_driver_of_age(int(line_contents[1]))
+
 
 if __name__ == '__main__':
     main()
