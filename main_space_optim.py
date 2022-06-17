@@ -69,8 +69,8 @@ def leave_a_car(slot_no):
         driver_age = car_num_driver_age_map[car_no]
         car_num_driver_age_map.pop(car_no, None)
         slot_car_number_map.pop(slot_no, None)
-        print('Slot number %s vacated, the car with vehicle registration number "%s" left the space,'
-              '\ the driver of the car was of age %s' % (slot_no, car_no, driver_age))
+        print('Slot number %s vacated, the car with vehicle registration number "%s" left the space, '
+              'the driver of the car was of age %s' % (slot_no, car_no, driver_age))
     else:
         print("Theres no car at the slot to leave")
 
