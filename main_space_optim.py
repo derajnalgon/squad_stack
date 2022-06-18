@@ -85,7 +85,7 @@ def main():
     if line_contents[0].lower() == "create_parking_lot":
         parking_lot = Parking_lot(int(line_contents[1]))
     else:
-        print("Thhe first should be create parking lot")
+        print("Thhe first command should be create parking lot")
 
 
     for i, line in enumerate(lines):
